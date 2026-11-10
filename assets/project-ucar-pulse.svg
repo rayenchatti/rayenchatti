@@ -17,6 +17,10 @@
     .syn { stroke: #6F8BB8; stroke-opacity: .45; stroke-width: 1.2; }
     .node { animation: fire 1.6s ease-in-out infinite; }
     @keyframes fire { 0%, 100% { opacity: .55 } 30% { opacity: 1 } }
+    .pin { opacity: 0; animation: drop 3s cubic-bezier(.3,1.6,.5,1) infinite; }
+    @keyframes drop { 0% { opacity: 0; transform: translateY(-30px) } 15%, 85% { opacity: 1; transform: none } 100% { opacity: 0 } }
+    .slide { animation: slide 4s ease-in-out infinite; }
+    @keyframes slide { 50% { transform: translate(-10px, -8px) } }
     .reveal { opacity: 0; animation: in .6s forwards; }
   </style>
   <polygon points="0,12 12,0 600,0 600,328 588,340 0,340" fill="#1d2f52"/><rect x="0" y="12" width="588" height="328" fill="#0A1222" stroke="#6F8BB8" stroke-opacity=".6"/>

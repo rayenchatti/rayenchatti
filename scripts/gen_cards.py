@@ -255,6 +255,50 @@ def scene_network(cx, cy):
     return "".join(out)
 
 
+def scene_explorer(cx, cy):
+    """ScoutSmart: an isometric map tile where discovery pins drop in one by one."""
+    u = 34
+    ox, oy = cx - 6, cy + 4
+    out = [iso_box(ox, oy, u, -2, -2, 4, 4, 10, "#1d2f52")]
+    def iso(a, b, h):
+        return ox + (a - b) * C30 * u, oy + (a + b) * S30 * u - h
+    # faint grid on the tile
+    for i in range(5):
+        x1, y1 = iso(-2 + i, -2, 10); x2, y2 = iso(-2 + i, 2, 10)
+        x3, y3 = iso(-2, -2 + i, 10); x4, y4 = iso(2, -2 + i, 10)
+        out.append(f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{STEEL}" stroke-opacity=".35"/>'
+                   f'<line x1="{x3:.1f}" y1="{y3:.1f}" x2="{x4:.1f}" y2="{y4:.1f}" stroke="{STEEL}" stroke-opacity=".35"/>')
+    pins = [(-1.2, -0.8), (0.6, -1.3), (-0.4, 0.9), (1.2, 0.5), (0.2, -0.1)]
+    for i, (a, b) in enumerate(pins):
+        x, y = iso(a, b, 10)
+        hi = i == len(pins) - 1
+        col = ACCENT if hi else LIGHT
+        out.append(f'<ellipse cx="{x:.1f}" cy="{y:.1f}" rx="8" ry="4" fill="#000" fill-opacity=".35"/>'
+                   f'<g class="pin" style="animation-delay:{i * 0.5:.1f}s">'
+                   f'<line x1="{x:.1f}" y1="{y:.1f}" x2="{x:.1f}" y2="{y - 34:.1f}" stroke="{col}" stroke-width="2"/>'
+                   f'<circle cx="{x:.1f}" cy="{y - 40:.1f}" r="{9 if hi else 7}" fill="{col}"/></g>')
+    return "".join(out)
+
+
+def scene_layers(cx, cy):
+    """Portfolio: stacked 3D pages sliding past each other, like scroll-driven scenes."""
+    out = []
+    for i in range(3):
+        x = cx - 70 + i * 34
+        y = cy - 70 - i * 6
+        top = i == 2
+        body = (f'<rect width="120" height="150" fill="{PANEL if not top else "#132344"}" stroke="{STEEL}" stroke-opacity=".8"/>'
+                f'<rect width="120" height="16" fill="#1d2f52"/>'
+                f'<rect x="12" y="30" width="{70 - i * 10}" height="6" fill="{LIGHT}" fill-opacity=".6"/>'
+                f'<rect x="12" y="44" width="{90 - i * 14}" height="6" fill="{LIGHT}" fill-opacity=".35"/>')
+        if top:
+            body += (f'<circle cx="60" cy="96" r="22" fill="none" stroke="{ACCENT}" stroke-width="3"/>'
+                     f'<circle cx="60" cy="96" r="6" fill="{ACCENT}"><animate attributeName="cx" values="52;68;52" dur="3s" repeatCount="indefinite"/></circle>')
+        out.append(f'<g class="slide" style="animation-delay:{-i * 0.7:.1f}s">'
+                   f'<g transform="matrix(0.866,0.5,0,1,{x},{y})">{body}</g></g>')
+    return "".join(out)
+
+
 PROJECTS = [
     ("veritaslearn", "VeritasLearn", ["AI study assistant that turns", "material into lessons, quizzes", "and flashcards."],
      "1ST PRIZE", "OPSYNC Hackathon", ["React Native", "Supabase", "Groq"], scene_flashcards),
@@ -262,8 +306,12 @@ PROJECTS = [
      "1ST PRIZE", "DevHeist", ["React", "Tailwind", "Framer Motion"], scene_qr),
     ("ucar-pulse", "UCAR Pulse", ["AI platform connecting 30+", "University of Carthage", "institutions."],
      "TOP 5 / 30", "HACK4UCAR 2025", ["Next.js", "FastAPI", "Qdrant"], scene_pulse),
+    ("scoutsmart", "ScoutSmart", ["AI nature explorer for kids:", "scan plants and animals, earn", "XP, pin discoveries on a map."],
+     "HACKATHON BUILD", "Vecna's Algorithm 2.0", ["React Native", "Expo", "Gemini"], scene_explorer),
     ("itgate", "ITGate AI", ["Company-grounded RAG assistant", "running on a local LLM."],
      "INTERNSHIP", "ITGate Group", ["Spring Boot", "FastAPI", "Ollama"], scene_network),
+    ("portfolio", "Portfolio", ["3D portfolio with scroll-driven", "WebGL scenes and a cursor-", "tracking portrait."],
+     "LIVE", "rayenchatti.vercel.app", ["Next.js", "Three.js", "WebGL"], scene_layers),
 ]
 
 
@@ -291,6 +339,10 @@ def project_card(slug, name, desc, rank, event, stack, scene):
     .syn {{ stroke: {STEEL}; stroke-opacity: .45; stroke-width: 1.2; }}
     .node {{ animation: fire 1.6s ease-in-out infinite; }}
     @keyframes fire {{ 0%, 100% {{ opacity: .55 }} 30% {{ opacity: 1 }} }}
+    .pin {{ opacity: 0; animation: drop 3s cubic-bezier(.3,1.6,.5,1) infinite; }}
+    @keyframes drop {{ 0% {{ opacity: 0; transform: translateY(-30px) }} 15%, 85% {{ opacity: 1; transform: none }} 100% {{ opacity: 0 }} }}
+    .slide {{ animation: slide 4s ease-in-out infinite; }}
+    @keyframes slide {{ 50% {{ transform: translate(-10px, -8px) }} }}
     .reveal {{ opacity: 0; animation: in .6s forwards; }}
   </style>
   {frame_card(W, H)}

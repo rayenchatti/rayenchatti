@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340" role="img" aria-label="ScoutSmart: AI nature explorer for kids: scan plants and animals, earn XP, pin discoveries on a map. HACKATHON BUILD, Vecna's Algorithm 2.0.">
+  <style>
+    text { font-family: 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace; }
+    .big { font-family: 'Segoe UI', Inter, Ubuntu, Arial, sans-serif; font-weight: 900; }
+    @keyframes in { to { opacity: 1 } }
+
+    .name { fill: #ECE8DF; font-size: 34px; }
+    .desc { fill: #B9C7DD; font-size: 15px; }
+    .rank { fill: #D4FF3A; font-size: 16px; font-weight: 800; letter-spacing: 1px; }
+    .event { fill: #8193b3; font-size: 15px; }
+    .chip { fill: #B9C7DD; font-size: 13px; }
+    .open { fill: #8193b3; font-size: 13px; }
+    .bob { animation: bob 3.6s ease-in-out infinite; }
+    @keyframes bob { 50% { transform: translateY(-12px) } }
+    .pillar { animation: pulse 2.8s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { transform: scaleY(1) } 25% { transform: scaleY(2.1) } 50% { transform: scaleY(1) } }
+    .syn { stroke: #6F8BB8; stroke-opacity: .45; stroke-width: 1.2; }
+    .node { animation: fire 1.6s ease-in-out infinite; }
+    @keyframes fire { 0%, 100% { opacity: .55 } 30% { opacity: 1 } }
+    .pin { opacity: 0; animation: drop 3s cubic-bezier(.3,1.6,.5,1) infinite; }
+    @keyframes drop { 0% { opacity: 0; transform: translateY(-30px) } 15%, 85% { opacity: 1; transform: none } 100% { opacity: 0 } }
+    .slide { animation: slide 4s ease-in-out infinite; }
+    @keyframes slide { 50% { transform: translate(-10px, -8px) } }
+    .reveal { opacity: 0; animation: in .6s forwards; }
+  </style>
+  <polygon points="0,12 12,0 600,0 600,328 588,340 0,340" fill="#1d2f52"/><rect x="0" y="12" width="588" height="328" fill="#0A1222" stroke="#6F8BB8" stroke-opacity=".6"/>
+  <g class="reveal" style="animation-delay:.1s">
+    <text x="34" y="82" class="big name">ScoutSmart</text>
+    <text x="34" y="128" class="desc">AI nature explorer for kids:</text><text x="34" y="152" class="desc">scan plants and animals, earn</text><text x="34" y="176" class="desc">XP, pin discoveries on a map.</text>
+  </g>
+  <g class="reveal" style="animation-delay:.4s">
+    <rect x="34" y="214" width="4" height="34" fill="#D4FF3A"/>
+    <text x="50" y="228" class="rank">HACKATHON BUILD</text>
+    <text x="50" y="246" class="event">Vecna's Algorithm 2.0</text>
+  </g>
+  <g class="reveal" style="animation-delay:.6s"><rect x="34" y="270" width="119" height="30" fill="#0d1830" stroke="#6F8BB8" stroke-opacity=".5"/><text x="94" y="290" text-anchor="middle" class="chip">React Native</text><rect x="161.2" y="270" width="50" height="30" fill="#0d1830" stroke="#6F8BB8" stroke-opacity=".5"/><text x="186" y="290" text-anchor="middle" class="chip">Expo</text><rect x="219.6" y="270" width="68" height="30" fill="#0d1830" stroke="#6F8BB8" stroke-opacity=".5"/><text x="253" y="290" text-anchor="middle" class="chip">Gemini</text></g>
+  <text x="560" y="56" text-anchor="end" class="open">open repo -&gt;</text>
+  <polygon points="336.2,164.0 454.0,232.0 454.0,242.0 336.2,174.0" fill="#0f192d" /><polygon points="454.0,232.0 571.8,164.0 571.8,174.0 454.0,242.0" fill="#172541" /><polygon points="454.0,96.0 571.8,164.0 454.0,232.0 336.2,164.0" fill="#1f335a" stroke="#ffffff" stroke-opacity=".2"/><line x1="454.0" y1="96.0" x2="336.2" y2="164.0" stroke="#6F8BB8" stroke-opacity=".35"/><line x1="454.0" y1="96.0" x2="571.8" y2="164.0" stroke="#6F8BB8" stroke-opacity=".35"/><line x1="483.4" y1="113.0" x2="365.7" y2="181.0" stroke="#6F8BB8" stroke-opacity=".35"/><line x1="424.6" y1="113.0" x2="542.3" y2="181.0" stroke="#6F8BB8" stroke-opacity=".35"/><line x1="512.9" y1="130.0" x2="395.1" y2="198.0" stroke="#6F8BB8" stroke-opacity=".35"/><line x1="395.1" y1="130.0" x2="512.9" y2="198.0" stroke="#6F8BB8" stroke-opacity=".35"/><line x1="542.3" y1="147.0" x2="424.6" y2="215.0" stroke="#6F8BB8" stroke-opacity=".35"/><line x1="365.7" y1="147.0" x2="483.4" y2="215.0" stroke="#6F8BB8" stroke-opacity=".35"/><line x1="571.8" y1="164.0" x2="454.0" y2="232.0" stroke="#6F8BB8" stroke-opacity=".35"/><line x1="336.2" y1="164.0" x2="454.0" y2="232.0" stroke="#6F8BB8" stroke-opacity=".35"/><ellipse cx="442.2" cy="130.0" rx="8" ry="4" fill="#000" fill-opacity=".35"/><g class="pin" style="animation-delay:0.0s"><line x1="442.2" y1="130.0" x2="442.2" y2="96.0" stroke="#B9C7DD" stroke-width="2"/><circle cx="442.2" cy="90.0" r="7" fill="#B9C7DD"/></g><ellipse cx="509.9" cy="152.1" rx="8" ry="4" fill="#000" fill-opacity=".35"/><g class="pin" style="animation-delay:0.5s"><line x1="509.9" y1="152.1" x2="509.9" y2="118.1" stroke="#B9C7DD" stroke-width="2"/><circle cx="509.9" cy="112.1" r="7" fill="#B9C7DD"/></g><ellipse cx="415.7" cy="172.5" rx="8" ry="4" fill="#000" fill-opacity=".35"/><g class="pin" style="animation-delay:1.0s"><line x1="415.7" y1="172.5" x2="415.7" y2="138.5" stroke="#B9C7DD" stroke-width="2"/><circle cx="415.7" cy="132.5" r="7" fill="#B9C7DD"/></g><ellipse cx="474.6" cy="192.9" rx="8" ry="4" fill="#000" fill-opacity=".35"/><g class="pin" style="animation-delay:1.5s"><line x1="474.6" y1="192.9" x2="474.6" y2="158.9" stroke="#B9C7DD" stroke-width="2"/><circle cx="474.6" cy="152.9" r="7" fill="#B9C7DD"/></g><ellipse cx="462.8" cy="165.7" rx="8" ry="4" fill="#000" fill-opacity=".35"/><g class="pin" style="animation-delay:2.0s"><line x1="462.8" y1="165.7" x2="462.8" y2="131.7" stroke="#D4FF3A" stroke-width="2"/><circle cx="462.8" cy="125.7" r="9" fill="#D4FF3A"/></g>
+</svg>

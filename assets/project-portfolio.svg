@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340" role="img" aria-label="Portfolio: 3D portfolio with scroll-driven WebGL scenes and a cursor- tracking portrait. LIVE, rayenchatti.vercel.app.">
+  <style>
+    text { font-family: 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace; }
+    .big { font-family: 'Segoe UI', Inter, Ubuntu, Arial, sans-serif; font-weight: 900; }
+    @keyframes in { to { opacity: 1 } }
+
+    .name { fill: #ECE8DF; font-size: 34px; }
+    .desc { fill: #B9C7DD; font-size: 15px; }
+    .rank { fill: #D4FF3A; font-size: 16px; font-weight: 800; letter-spacing: 1px; }
+    .event { fill: #8193b3; font-size: 15px; }
+    .chip { fill: #B9C7DD; font-size: 13px; }
+    .open { fill: #8193b3; font-size: 13px; }
+    .bob { animation: bob 3.6s ease-in-out infinite; }
+    @keyframes bob { 50% { transform: translateY(-12px) } }
+    .pillar { animation: pulse 2.8s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { transform: scaleY(1) } 25% { transform: scaleY(2.1) } 50% { transform: scaleY(1) } }
+    .syn { stroke: #6F8BB8; stroke-opacity: .45; stroke-width: 1.2; }
+    .node { animation: fire 1.6s ease-in-out infinite; }
+    @keyframes fire { 0%, 100% { opacity: .55 } 30% { opacity: 1 } }
+    .pin { opacity: 0; animation: drop 3s cubic-bezier(.3,1.6,.5,1) infinite; }
+    @keyframes drop { 0% { opacity: 0; transform: translateY(-30px) } 15%, 85% { opacity: 1; transform: none } 100% { opacity: 0 } }
+    .slide { animation: slide 4s ease-in-out infinite; }
+    @keyframes slide { 50% { transform: translate(-10px, -8px) } }
+    .reveal { opacity: 0; animation: in .6s forwards; }
+  </style>
+  <polygon points="0,12 12,0 600,0 600,328 588,340 0,340" fill="#1d2f52"/><rect x="0" y="12" width="588" height="328" fill="#0A1222" stroke="#6F8BB8" stroke-opacity=".6"/>
+  <g class="reveal" style="animation-delay:.1s">
+    <text x="34" y="82" class="big name">Portfolio</text>
+    <text x="34" y="128" class="desc">3D portfolio with scroll-driven</text><text x="34" y="152" class="desc">WebGL scenes and a cursor-</text><text x="34" y="176" class="desc">tracking portrait.</text>
+  </g>
+  <g class="reveal" style="animation-delay:.4s">
+    <rect x="34" y="214" width="4" height="34" fill="#D4FF3A"/>
+    <text x="50" y="228" class="rank">LIVE</text>
+    <text x="50" y="246" class="event">rayenchatti.vercel.app</text>
+  </g>
+  <g class="reveal" style="animation-delay:.6s"><rect x="34" y="270" width="76" height="30" fill="#0d1830" stroke="#6F8BB8" stroke-opacity=".5"/><text x="72" y="290" text-anchor="middle" class="chip">Next.js</text><rect x="118.19999999999999" y="270" width="85" height="30" fill="#0d1830" stroke="#6F8BB8" stroke-opacity=".5"/><text x="161" y="290" text-anchor="middle" class="chip">Three.js</text><rect x="211.0" y="270" width="59" height="30" fill="#0d1830" stroke="#6F8BB8" stroke-opacity=".5"/><text x="240" y="290" text-anchor="middle" class="chip">WebGL</text></g>
+  <text x="560" y="56" text-anchor="end" class="open">open repo -&gt;</text>
+  <g class="slide" style="animation-delay:0.0s"><g transform="matrix(0.866,0.5,0,1,390,100)"><rect width="120" height="150" fill="#0d1830" stroke="#6F8BB8" stroke-opacity=".8"/><rect width="120" height="16" fill="#1d2f52"/><rect x="12" y="30" width="70" height="6" fill="#B9C7DD" fill-opacity=".6"/><rect x="12" y="44" width="90" height="6" fill="#B9C7DD" fill-opacity=".35"/></g></g><g class="slide" style="animation-delay:-0.7s"><g transform="matrix(0.866,0.5,0,1,424,94)"><rect width="120" height="150" fill="#0d1830" stroke="#6F8BB8" stroke-opacity=".8"/><rect width="120" height="16" fill="#1d2f52"/><rect x="12" y="30" width="60" height="6" fill="#B9C7DD" fill-opacity=".6"/><rect x="12" y="44" width="76" height="6" fill="#B9C7DD" fill-opacity=".35"/></g></g><g class="slide" style="animation-delay:-1.4s"><g transform="matrix(0.866,0.5,0,1,458,88)"><rect width="120" height="150" fill="#132344" stroke="#6F8BB8" stroke-opacity=".8"/><rect width="120" height="16" fill="#1d2f52"/><rect x="12" y="30" width="50" height="6" fill="#B9C7DD" fill-opacity=".6"/><rect x="12" y="44" width="62" height="6" fill="#B9C7DD" fill-opacity=".35"/><circle cx="60" cy="96" r="22" fill="none" stroke="#D4FF3A" stroke-width="3"/><circle cx="60" cy="96" r="6" fill="#D4FF3A"><animate attributeName="cx" values="52;68;52" dur="3s" repeatCount="indefinite"/></circle></g></g>
+</svg>

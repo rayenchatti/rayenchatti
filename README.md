@@ -16,7 +16,9 @@
   <a href="https://github.com/rayenchatti/veritaslearn"><img src="./assets/project-veritaslearn.svg" width="49%" alt="VeritasLearn" /></a>
   <a href="https://github.com/rayenchatti/LifePass"><img src="./assets/project-lifepass.svg" width="49%" alt="LifePass" /></a>
   <a href="https://github.com/rayenchatti/UCAR-Pulse"><img src="./assets/project-ucar-pulse.svg" width="49%" alt="UCAR Pulse" /></a>
+  <a href="https://github.com/rayenchatti/ScoutSmart"><img src="./assets/project-scoutsmart.svg" width="49%" alt="ScoutSmart" /></a>
   <a href="https://github.com/rayenchatti/ITGate-internship"><img src="./assets/project-itgate.svg" width="49%" alt="ITGate AI Assistant" /></a>
+  <a href="https://github.com/rayenchatti/Portfolio"><img src="./assets/project-portfolio.svg" width="49%" alt="Portfolio" /></a>
 </p>
 
 <div align="center">
