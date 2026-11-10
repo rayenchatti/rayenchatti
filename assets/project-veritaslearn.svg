@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340" role="img" aria-label="VeritasLearn: AI study assistant that turns material into lessons, quizzes and flashcards. 1ST PRIZE, OPSYNC Hackathon.">
+  <style>
+    text { font-family: 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace; }
+    .big { font-family: 'Segoe UI', Inter, Ubuntu, Arial, sans-serif; font-weight: 900; }
+    @keyframes in { to { opacity: 1 } }
+
+    .name { fill: #ECE8DF; font-size: 34px; }
+    .desc { fill: #B9C7DD; font-size: 15px; }
+    .rank { fill: #D4FF3A; font-size: 16px; font-weight: 800; letter-spacing: 1px; }
+    .event { fill: #8193b3; font-size: 15px; }
+    .chip { fill: #B9C7DD; font-size: 13px; }
+    .open { fill: #8193b3; font-size: 13px; }
+    .bob { animation: bob 3.6s ease-in-out infinite; }
+    @keyframes bob { 50% { transform: translateY(-12px) } }
+    .pillar { animation: pulse 2.8s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { transform: scaleY(1) } 25% { transform: scaleY(2.1) } 50% { transform: scaleY(1) } }
+    .syn { stroke: #6F8BB8; stroke-opacity: .45; stroke-width: 1.2; }
+    .node { animation: fire 1.6s ease-in-out infinite; }
+    @keyframes fire { 0%, 100% { opacity: .55 } 30% { opacity: 1 } }
+    .reveal { opacity: 0; animation: in .6s forwards; }
+  </style>
+  <polygon points="0,12 12,0 600,0 600,328 588,340 0,340" fill="#1d2f52"/><rect x="0" y="12" width="588" height="328" fill="#0A1222" stroke="#6F8BB8" stroke-opacity=".6"/>
+  <g class="reveal" style="animation-delay:.1s">
+    <text x="34" y="82" class="big name">VeritasLearn</text>
+    <text x="34" y="128" class="desc">AI study assistant that turns</text><text x="34" y="152" class="desc">material into lessons, quizzes</text><text x="34" y="176" class="desc">and flashcards.</text>
+  </g>
+  <g class="reveal" style="animation-delay:.4s">
+    <rect x="34" y="214" width="4" height="34" fill="#D4FF3A"/>
+    <text x="50" y="228" class="rank">1ST PRIZE</text>
+    <text x="50" y="246" class="event">OPSYNC Hackathon</text>
+  </g>
+  <g class="reveal" style="animation-delay:.6s"><rect x="34" y="270" width="119" height="30" fill="#0d1830" stroke="#6F8BB8" stroke-opacity=".5"/><text x="94" y="290" text-anchor="middle" class="chip">React Native</text><rect x="161.2" y="270" width="85" height="30" fill="#0d1830" stroke="#6F8BB8" stroke-opacity=".5"/><text x="204" y="290" text-anchor="middle" class="chip">Supabase</text><rect x="254.0" y="270" width="50" height="30" fill="#0d1830" stroke="#6F8BB8" stroke-opacity=".5"/><text x="279" y="290" text-anchor="middle" class="chip">Groq</text></g>
+  <text x="560" y="56" text-anchor="end" class="open">open repo -&gt;</text>
+  <g class="bob" style="animation-delay:0.0s"><polygon points="379.9,196.5 463.0,244.5 463.0,250.5 379.9,202.5" fill="#131e32" /><polygon points="463.0,244.5 520.1,211.5 520.1,217.5 463.0,250.5" fill="#1c2c49" /><polygon points="437.0,163.5 520.1,211.5 463.0,244.5 379.9,196.5" fill="#273d65" stroke="#ffffff" stroke-opacity=".2"/></g><g class="bob" style="animation-delay:-0.6s"><polygon points="379.9,162.5 463.0,210.5 463.0,216.5 379.9,168.5" fill="#131e32" /><polygon points="463.0,210.5 520.1,177.5 520.1,183.5 463.0,216.5" fill="#1c2c49" /><polygon points="437.0,129.5 520.1,177.5 463.0,210.5 379.9,162.5" fill="#273d65" stroke="#ffffff" stroke-opacity=".2"/></g><g class="bob" style="animation-delay:-1.2s"><polygon points="379.9,128.5 463.0,176.5 463.0,182.5 379.9,134.5" fill="#192842" /><polygon points="463.0,176.5 520.1,143.5 520.1,149.5 463.0,182.5" fill="#253b60" /><polygon points="437.0,95.5 520.1,143.5 463.0,176.5 379.9,128.5" fill="#335184" stroke="#ffffff" stroke-opacity=".2"/><line x1="434.4" y1="109.0" x2="491.6" y2="142.0" stroke="#D4FF3A" stroke-width="3" stroke-linecap="round" stroke-opacity=".9"/><line x1="420.1" y1="117.2" x2="461.7" y2="141.2" stroke="#B9C7DD" stroke-width="3" stroke-linecap="round" stroke-opacity=".9"/><line x1="405.8" y1="125.5" x2="468.2" y2="161.5" stroke="#B9C7DD" stroke-width="3" stroke-linecap="round" stroke-opacity=".9"/></g>
+</svg>

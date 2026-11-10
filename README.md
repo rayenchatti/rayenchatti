@@ -10,56 +10,14 @@
 
 </div>
 
-### `> whoami`
+<img src="./assets/whoami.svg" width="100%" alt="whoami: Rayen Chatti, software engineering student at ISIMa, Tunisia" />
 
-- 🎓 Software Engineering student at **ISIMa**, Tunisia
-- 🛠️ I build **web & mobile apps** end to end, from idea to deployed product
-- 🤖 Into **AI**: RAG pipelines, local LLMs, AI assistants
-- 🔐 Growing into **cybersecurity**
-- 🏆 **2× hackathon winner**, and I love the 48-hour rush
-
-### `> ls ./featured`
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h4><a href="https://github.com/rayenchatti/veritaslearn">VeritasLearn</a></h4>
-      AI study assistant: lessons, quizzes and flashcards.<br/>
-      <b>🥇 1st Prize</b> · OPSYNC Hackathon<br/><br/>
-      <img src="https://img.shields.io/badge/React_Native-0A1222?style=flat-square&logo=react&logoColor=B9C7DD" />
-      <img src="https://img.shields.io/badge/Supabase-0A1222?style=flat-square&logo=supabase&logoColor=B9C7DD" />
-      <img src="https://img.shields.io/badge/Groq-0A1222?style=flat-square" />
-    </td>
-    <td width="50%" valign="top">
-      <h4><a href="https://github.com/rayenchatti/LifePass">LifePass</a></h4>
-      Medical records shared through a personal QR code.<br/>
-      <b>🥇 1st Prize</b> · DevHeist<br/><br/>
-      <img src="https://img.shields.io/badge/React-0A1222?style=flat-square&logo=react&logoColor=B9C7DD" />
-      <img src="https://img.shields.io/badge/Tailwind-0A1222?style=flat-square&logo=tailwindcss&logoColor=B9C7DD" />
-      <img src="https://img.shields.io/badge/Framer_Motion-0A1222?style=flat-square&logo=framer&logoColor=B9C7DD" />
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4><a href="https://github.com/rayenchatti/UCAR-Pulse">UCAR Pulse</a></h4>
-      AI platform for 30+ University of Carthage institutions.<br/>
-      <b>🏆 Top 5 / 30</b> · HACK4UCAR 2025<br/><br/>
-      <img src="https://img.shields.io/badge/Next.js-0A1222?style=flat-square&logo=nextdotjs&logoColor=B9C7DD" />
-      <img src="https://img.shields.io/badge/FastAPI-0A1222?style=flat-square&logo=fastapi&logoColor=B9C7DD" />
-      <img src="https://img.shields.io/badge/Qdrant-0A1222?style=flat-square" />
-    </td>
-    <td width="50%" valign="top">
-      <h4><a href="https://github.com/rayenchatti/ITGate-internship">ITGate AI Assistant</a></h4>
-      Company-grounded RAG assistant on a local LLM.<br/>
-      <b>💼 Internship</b> · ITGate Group<br/><br/>
-      <img src="https://img.shields.io/badge/Spring_Boot-0A1222?style=flat-square&logo=springboot&logoColor=B9C7DD" />
-      <img src="https://img.shields.io/badge/FastAPI-0A1222?style=flat-square&logo=fastapi&logoColor=B9C7DD" />
-      <img src="https://img.shields.io/badge/Ollama-0A1222?style=flat-square&logo=ollama&logoColor=B9C7DD" />
-    </td>
-  </tr>
-</table>
-
-### `> cat stack.txt`
+<p align="center">
+  <a href="https://github.com/rayenchatti/veritaslearn"><img src="./assets/project-veritaslearn.svg" width="49%" alt="VeritasLearn" /></a>
+  <a href="https://github.com/rayenchatti/LifePass"><img src="./assets/project-lifepass.svg" width="49%" alt="LifePass" /></a>
+  <a href="https://github.com/rayenchatti/UCAR-Pulse"><img src="./assets/project-ucar-pulse.svg" width="49%" alt="UCAR Pulse" /></a>
+  <a href="https://github.com/rayenchatti/ITGate-internship"><img src="./assets/project-itgate.svg" width="49%" alt="ITGate AI Assistant" /></a>
+</p>
 
 <div align="center">
 
@@ -68,8 +26,6 @@
 <img src="https://skillicons.dev/icons?i=supabase,postgres,mysql,docker,git,linux,vercel,figma&theme=dark" />
 
 </div>
-
-### `> ./stats --live`
 
 <img src="./assets/stats.svg" width="100%" alt="Language skyline and GitHub activity" />
 
