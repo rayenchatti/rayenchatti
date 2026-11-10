@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="Rayen Chatti - Software Engineering Student">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0C0C0C"/>
+      <stop offset="1" stop-color="#160a04"/>
+    </linearGradient>
+    <linearGradient id="fire" x1="0" y1="0" x2="1" y2="0" spreadMethod="repeat">
+      <stop offset="0" stop-color="#ff3d00"/>
+      <stop offset="0.35" stop-color="#ff9100"/>
+      <stop offset="0.5" stop-color="#ffe0a3"/>
+      <stop offset="0.65" stop-color="#ff9100"/>
+      <stop offset="1" stop-color="#ff3d00"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff7a1a" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ff7a1a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+    <style>
+      .t { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+      .name { font-size: 84px; font-weight: 800; letter-spacing: 10px; }
+      .sub { font-size: 22px; fill: #c9c9c9; letter-spacing: 6px; }
+      .tag { font-family: 'Consolas', 'Courier New', monospace; font-size: 16px; fill: #ff9100; }
+      .reveal { opacity: 0; animation: up 1.2s cubic-bezier(.2,.8,.2,1) forwards; }
+      .d1 { animation-delay: .2s } .d2 { animation-delay: .7s } .d3 { animation-delay: 1.2s }
+      @keyframes up { from { opacity: 0; transform: translateY(18px) } to { opacity: 1; transform: none } }
+      .e { animation: rise linear infinite; }
+      @keyframes rise {
+        0% { transform: translateY(0); opacity: 0 }
+        15% { opacity: 1 }
+        100% { transform: translateY(-340px); opacity: 0 }
+      }
+      .orbit { transform-origin: 600px 180px; animation: spin 18s linear infinite; }
+      .orbit2 { transform-origin: 600px 180px; animation: spin 28s linear infinite reverse; }
+      @keyframes spin { to { transform: rotate(360deg) } }
+      .pulse { transform-origin: 600px 180px; animation: pulse 3.5s ease-in-out infinite; }
+      @keyframes pulse { 50% { transform: scale(1.15); opacity: .6 } }
+      .cursor { animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0 } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#bg)"/>
+  <rect width="1200" height="360" fill="url(#grid)"/>
+
+  <!-- glowing core + orbits -->
+  <ellipse class="pulse" cx="600" cy="180" rx="380" ry="170" fill="url(#core)"/>
+  <g class="orbit" fill="none" stroke="#ff9100" stroke-opacity="0.25">
+    <ellipse cx="600" cy="180" rx="470" ry="120" stroke-dasharray="4 12"/>
+    <circle cx="1070" cy="180" r="5" fill="#ffb74d" stroke="none" filter="url(#glow)"/>
+  </g>
+  <g class="orbit2" fill="none" stroke="#ff3d00" stroke-opacity="0.18">
+    <ellipse cx="600" cy="180" rx="520" ry="150" stroke-dasharray="2 18"/>
+    <circle cx="80" cy="180" r="4" fill="#ff6d00" stroke="none" filter="url(#glow)"/>
+  </g>
+
+  <!-- embers -->
+  <g fill="#ff9100">
+    <circle class="e" cx="90"   cy="370" r="2.5" style="animation-duration:7s;animation-delay:0s"/>
+    <circle class="e" cx="170"  cy="370" r="1.5" style="animation-duration:9s;animation-delay:2s"/>
+    <circle class="e" cx="260"  cy="370" r="3"   style="animation-duration:6s;animation-delay:1s"/>
+    <circle class="e" cx="340"  cy="370" r="2"   style="animation-duration:8s;animation-delay:3.5s"/>
+    <circle class="e" cx="430"  cy="370" r="1.5" style="animation-duration:10s;animation-delay:.5s"/>
+    <circle class="e" cx="520"  cy="370" r="2.5" style="animation-duration:7.5s;animation-delay:4s"/>
+    <circle class="e" cx="610"  cy="370" r="2"   style="animation-duration:6.5s;animation-delay:2.5s"/>
+    <circle class="e" cx="700"  cy="370" r="3"   style="animation-duration:9s;animation-delay:1.5s"/>
+    <circle class="e" cx="780"  cy="370" r="1.5" style="animation-duration:8s;animation-delay:5s"/>
+    <circle class="e" cx="870"  cy="370" r="2.5" style="animation-duration:7s;animation-delay:3s"/>
+    <circle class="e" cx="950"  cy="370" r="2"   style="animation-duration:10s;animation-delay:.8s"/>
+    <circle class="e" cx="1030" cy="370" r="3"   style="animation-duration:6s;animation-delay:4.5s"/>
+    <circle class="e" cx="1120" cy="370" r="1.5" style="animation-duration:8.5s;animation-delay:2.2s"/>
+  </g>
+  <g fill="#ff3d00">
+    <circle class="e" cx="130"  cy="370" r="2" style="animation-duration:11s;animation-delay:6s"/>
+    <circle class="e" cx="390"  cy="370" r="2" style="animation-duration:9.5s;animation-delay:6.5s"/>
+    <circle class="e" cx="660"  cy="370" r="2" style="animation-duration:12s;animation-delay:5.5s"/>
+    <circle class="e" cx="910"  cy="370" r="2" style="animation-duration:10.5s;animation-delay:7s"/>
+    <circle class="e" cx="1080" cy="370" r="2" style="animation-duration:9s;animation-delay:6.2s"/>
+  </g>
+
+  <!-- text -->
+  <g class="t" text-anchor="middle">
+    <text class="tag reveal d1" x="600" y="104">&lt;hello world /&gt;</text>
+    <text class="name reveal d2" x="600" y="196" fill="url(#fire)" filter="url(#glow)">RAYEN CHATTI</text>
+    <text class="sub reveal d3" x="600" y="248">SOFTWARE ENGINEERING STUDENT · WEB &amp; MOBILE · AI · CYBERSECURITY</text>
+    <text class="tag reveal d3" x="600" y="290">~/tunisia $ building cool things<tspan class="cursor">_</tspan></text>
+  </g>
+</svg>
