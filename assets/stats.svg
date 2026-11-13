@@ -33,7 +33,7 @@
   <rect x="1" y="1" width="1198" height="558" rx="18" fill="none" stroke="#6F8BB8" stroke-opacity=".45" stroke-width="2"/>
 
   <text x="40" y="58" class="h">LANGUAGE SKYLINE</text>
-  <text x="40" y="82" class="hs">// each repo weighted equally · updated 2026-11-12</text>
+  <text x="40" y="82" class="hs">// each repo weighted equally · updated 2026-11-13</text>
   <text x="770" y="58" class="h">ACTIVITY</text>
   <text x="770" y="82" class="hs">// live from the GitHub API</text>
 
@@ -52,7 +52,7 @@
       <polygon points="986,150 996,140 1186,140 1186,252 1176,262 1176,150" fill="#24385c"/>
       <rect x="986" y="150" width="190" height="112" fill="#0a1222" stroke="#6F8BB8" stroke-opacity=".7"/>
       <text x="1004" y="182" class="cl">commits / 12 months</text>
-      <text x="1004" y="238" class="cv" fill="#D4FF3A">60</text>
+      <text x="1004" y="238" class="cv" fill="#D4FF3A">61</text>
     </g>
     <g class="card" style="animation-delay:1.0s">
       <polygon points="770,292 780,282 970,282 970,394 960,404 960,292" fill="#24385c"/>
