@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340" role="img" aria-label="Cinematic 3D: Open-source Claude skill: describe a scene, get a scroll-driven 3D website. OPEN SOURCE, Claude Code skill.">
+  <style>
+    text { font-family: 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace; }
+    .big { font-family: 'Segoe UI', Inter, Ubuntu, Arial, sans-serif; font-weight: 900; }
+    @keyframes in { to { opacity: 1 } }
+
+    .name { fill: #ECE8DF; font-size: 34px; }
+    .desc { fill: #B9C7DD; font-size: 15px; }
+    .rank { fill: #D4FF3A; font-size: 16px; font-weight: 800; letter-spacing: 1px; }
+    .event { fill: #8193b3; font-size: 15px; }
+    .chip { fill: #B9C7DD; font-size: 13px; }
+    .open { fill: #8193b3; font-size: 13px; }
+    .bob { animation: bob 3.6s ease-in-out infinite; }
+    @keyframes bob { 50% { transform: translateY(-12px) } }
+    .pillar { animation: pulse 2.8s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { transform: scaleY(1) } 25% { transform: scaleY(2.1) } 50% { transform: scaleY(1) } }
+    .syn { stroke: #6F8BB8; stroke-opacity: .45; stroke-width: 1.2; }
+    .node { animation: fire 1.6s ease-in-out infinite; }
+    @keyframes fire { 0%, 100% { opacity: .55 } 30% { opacity: 1 } }
+    .pin { opacity: 0; animation: drop 3s cubic-bezier(.3,1.6,.5,1) infinite; }
+    @keyframes drop { 0% { opacity: 0; transform: translateY(-30px) } 15%, 85% { opacity: 1; transform: none } 100% { opacity: 0 } }
+    .slide { animation: slide 4s ease-in-out infinite; }
+    @keyframes slide { 50% { transform: translate(-10px, -8px) } }
+    .reveal { opacity: 0; animation: in .6s forwards; }
+    .leaf { animation: swing 6s ease-in-out infinite; }
+    @keyframes swing { 0%, 15% { transform: scaleX(1) } 50%, 80% { transform: scaleX(.18) } 100% { transform: scaleX(1) } }
+    .glow { opacity: .15; animation: glow 6s ease-in-out infinite; }
+    @keyframes glow { 0%, 15% { opacity: .15 } 50%, 80% { opacity: .95 } 100% { opacity: .15 } }
+    .spill { opacity: 0; animation: spill 6s ease-in-out infinite; }
+    @keyframes spill { 0%, 15% { opacity: 0 } 50%, 80% { opacity: .35 } 100% { opacity: 0 } }
+    .fog { animation: fog 6.6s ease-in-out infinite; }
+    @keyframes fog { 50% { transform: translateX(14px) } }
+  </style>
+  <polygon points="0,12 12,0 600,0 600,328 588,340 0,340" fill="#1d2f52"/><rect x="0" y="12" width="588" height="328" fill="#0A1222" stroke="#6F8BB8" stroke-opacity=".6"/>
+  <g class="reveal" style="animation-delay:.1s">
+    <text x="34" y="82" class="big name">Cinematic 3D</text>
+    <text x="34" y="128" class="desc">Open-source Claude skill: describe</text><text x="34" y="152" class="desc">a scene, get a scroll-driven</text><text x="34" y="176" class="desc">3D website.</text>
+  </g>
+  <g class="reveal" style="animation-delay:.4s">
+    <rect x="34" y="214" width="4" height="34" fill="#D4FF3A"/>
+    <text x="50" y="228" class="rank">OPEN SOURCE</text>
+    <text x="50" y="246" class="event">Claude Code skill</text>
+  </g>
+  <g class="reveal" style="animation-delay:.6s"><rect x="34" y="270" width="68" height="30" fill="#0d1830" stroke="#6F8BB8" stroke-opacity=".5"/><text x="68" y="290" text-anchor="middle" class="chip">Claude</text><rect x="109.6" y="270" width="85" height="30" fill="#0d1830" stroke="#6F8BB8" stroke-opacity=".5"/><text x="152" y="290" text-anchor="middle" class="chip">Three.js</text><rect x="202.39999999999998" y="270" width="42" height="30" fill="#0d1830" stroke="#6F8BB8" stroke-opacity=".5"/><text x="223" y="290" text-anchor="middle" class="chip">R3F</text></g>
+  <text x="560" y="56" text-anchor="end" class="open">open repo -&gt;</text>
+  <polygon class="spill" points="430,256 490,256 540,300 380,300" fill="#FFE2B0"/><rect class="glow" x="430" y="132" width="60" height="124" fill="#FFE2B0"/><g class="leaf" style="transform-origin:430px 194px"><rect x="430" y="132" width="30" height="124" fill="#24385c" stroke="#6F8BB8" stroke-opacity=".7"/><circle cx="458" cy="172" r="14" fill="none" stroke="#B9C7DD" stroke-opacity=".35"/></g><g class="leaf" style="transform-origin:490px 194px"><rect x="460" y="132" width="30" height="124" fill="#24385c" stroke="#6F8BB8" stroke-opacity=".7"/><circle cx="462" cy="172" r="14" fill="none" stroke="#B9C7DD" stroke-opacity=".35"/></g><polygon points="394.0,214.7 406.0,206.7 442.0,206.7 430.0,214.7" fill="#486296" /><polygon points="430.0,214.7 442.0,206.7 442.0,247.0 430.0,255.0" fill="#222f48" /><rect x="394" y="214.66666666666666" width="36" height="40.333333333333336" fill="#3a4f78" stroke="#ffffff" stroke-opacity=".12"/><polygon points="394.0,173.3 406.0,165.3 442.0,165.3 430.0,173.3" fill="#3f5888" /><polygon points="430.0,173.3 442.0,165.3 442.0,205.7 430.0,213.7" fill="#1e2a41" /><rect x="394" y="173.33333333333331" width="36" height="40.333333333333336" fill="#33476d" stroke="#ffffff" stroke-opacity=".12"/><polygon points="394.0,132.0 406.0,124.0 442.0,124.0 430.0,132.0" fill="#486296" /><polygon points="430.0,132.0 442.0,124.0 442.0,164.3 430.0,172.3" fill="#222f48" /><rect x="394" y="132.0" width="36" height="40.333333333333336" fill="#3a4f78" stroke="#ffffff" stroke-opacity=".12"/><polygon points="490.0,214.7 502.0,206.7 538.0,206.7 526.0,214.7" fill="#486296" /><polygon points="526.0,214.7 538.0,206.7 538.0,247.0 526.0,255.0" fill="#222f48" /><rect x="490" y="214.66666666666666" width="36" height="40.333333333333336" fill="#3a4f78" stroke="#ffffff" stroke-opacity=".12"/><polygon points="490.0,173.3 502.0,165.3 538.0,165.3 526.0,173.3" fill="#3f5888" /><polygon points="526.0,173.3 538.0,165.3 538.0,205.7 526.0,213.7" fill="#1e2a41" /><rect x="490" y="173.33333333333331" width="36" height="40.333333333333336" fill="#33476d" stroke="#ffffff" stroke-opacity=".12"/><polygon points="490.0,132.0 502.0,124.0 538.0,124.0 526.0,132.0" fill="#486296" /><polygon points="526.0,132.0 538.0,124.0 538.0,164.3 526.0,172.3" fill="#222f48" /><rect x="490" y="132.0" width="36" height="40.333333333333336" fill="#3a4f78" stroke="#ffffff" stroke-opacity=".12"/><polygon points="384.0,102.0 396.0,94.0 548.0,94.0 536.0,102.0" fill="#486296" /><polygon points="536.0,102.0 548.0,94.0 548.0,124.0 536.0,132.0" fill="#222f48" /><rect x="384" y="102" width="152" height="30" fill="#3a4f78" stroke="#ffffff" stroke-opacity=".12"/><polygon points="400.0,86.0 412.0,78.0 458.0,78.0 446.0,86.0" fill="#3f5888" /><polygon points="446.0,86.0 458.0,78.0 458.0,94.0 446.0,102.0" fill="#1e2a41" /><rect x="400" y="86" width="46" height="16" fill="#33476d" stroke="#ffffff" stroke-opacity=".12"/><polygon points="452.0,88.0 464.0,80.0 502.0,80.0 490.0,88.0" fill="#486296" /><polygon points="490.0,88.0 502.0,80.0 502.0,94.0 490.0,102.0" fill="#222f48" /><rect x="452" y="88" width="38" height="14" fill="#3a4f78" stroke="#ffffff" stroke-opacity=".12"/><ellipse class="fog" style="animation-delay:0.0s" cx="390" cy="262" rx="78" ry="9" fill="#B9C7DD" fill-opacity=".09"/><ellipse class="fog" style="animation-delay:-2.2s" cx="460" cy="267" rx="78" ry="9" fill="#B9C7DD" fill-opacity=".09"/><ellipse class="fog" style="animation-delay:-4.4s" cx="530" cy="272" rx="78" ry="9" fill="#B9C7DD" fill-opacity=".09"/>
+</svg>

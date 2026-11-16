@@ -13,6 +13,7 @@
 <img src="./assets/whoami.svg" width="100%" alt="whoami: Rayen Chatti, software engineering student at ISIMa, Tunisia" />
 
 <p align="center">
+  <a href="https://github.com/rayenchatti/cinematic-3d-web"><img src="./assets/project-cinematic-3d-web.svg" width="49%" alt="Cinematic 3D Web" /></a>
   <a href="https://github.com/rayenchatti/veritaslearn"><img src="./assets/project-veritaslearn.svg" width="49%" alt="VeritasLearn" /></a>
   <a href="https://github.com/rayenchatti/LifePass"><img src="./assets/project-lifepass.svg" width="49%" alt="LifePass" /></a>
   <a href="https://github.com/rayenchatti/UCAR-Pulse"><img src="./assets/project-ucar-pulse.svg" width="49%" alt="UCAR Pulse" /></a>

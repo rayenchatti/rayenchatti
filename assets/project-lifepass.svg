@@ -22,6 +22,14 @@
     .slide { animation: slide 4s ease-in-out infinite; }
     @keyframes slide { 50% { transform: translate(-10px, -8px) } }
     .reveal { opacity: 0; animation: in .6s forwards; }
+    .leaf { animation: swing 6s ease-in-out infinite; }
+    @keyframes swing { 0%, 15% { transform: scaleX(1) } 50%, 80% { transform: scaleX(.18) } 100% { transform: scaleX(1) } }
+    .glow { opacity: .15; animation: glow 6s ease-in-out infinite; }
+    @keyframes glow { 0%, 15% { opacity: .15 } 50%, 80% { opacity: .95 } 100% { opacity: .15 } }
+    .spill { opacity: 0; animation: spill 6s ease-in-out infinite; }
+    @keyframes spill { 0%, 15% { opacity: 0 } 50%, 80% { opacity: .35 } 100% { opacity: 0 } }
+    .fog { animation: fog 6.6s ease-in-out infinite; }
+    @keyframes fog { 50% { transform: translateX(14px) } }
   </style>
   <polygon points="0,12 12,0 600,0 600,328 588,340 0,340" fill="#1d2f52"/><rect x="0" y="12" width="588" height="328" fill="#0A1222" stroke="#6F8BB8" stroke-opacity=".6"/>
   <g class="reveal" style="animation-delay:.1s">

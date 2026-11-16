@@ -299,7 +299,48 @@ def scene_layers(cx, cy):
     return "".join(out)
 
 
+def scene_portal(cx, cy):
+    """Cinematic 3D Web: a stone door in fog whose leaves swing open, light spilling onto the ground."""
+    GLOW = "#FFE2B0"
+    ox, ground = cx, cy + 86
+    top = ground - 124          # top of the opening
+    dx, dy = 12, -8             # depth offset for the extruded faces
+    out = []
+
+    def block(x, y, w, h, color):
+        """A front-facing stone block with a lit top and a shaded side, for depth."""
+        return (poly([(x, y), (x + dx, y + dy), (x + w + dx, y + dy), (x + w, y)], shade(color, 1.25)) +
+                poly([(x + w, y), (x + w + dx, y + dy), (x + w + dx, y + h + dy), (x + w, y + h)], shade(color, 0.6)) +
+                f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{color}" stroke="#ffffff" stroke-opacity=".12"/>')
+
+    # light spilling onto the ground, widening as the doors open
+    out.append(f'<polygon class="spill" points="{ox - 30},{ground} {ox + 30},{ground} {ox + 80},{ground + 44} {ox - 80},{ground + 44}" fill="{GLOW}"/>')
+    # the glow behind the doors
+    out.append(f'<rect class="glow" x="{ox - 30}" y="{top}" width="60" height="124" fill="{GLOW}"/>')
+    # the two leaves, hinged at the pillars
+    for side in (-1, 1):
+        hx = ox + side * 30
+        x = hx if side < 0 else ox
+        out.append(f'<g class="leaf" style="transform-origin:{hx}px {top + 62}px">'
+                   f'<rect x="{x}" y="{top}" width="30" height="124" fill="#24385c" stroke="{STEEL}" stroke-opacity=".7"/>'
+                   f'<circle cx="{ox + side * 2}" cy="{top + 40}" r="14" fill="none" stroke="{LIGHT}" stroke-opacity=".35"/></g>')
+    # pillars of stacked blocks, then the lintel and a broken cap stone
+    for px in (ox - 66, ox + 30):
+        for k in range(3):
+            h = 124 / 3
+            out.append(block(px, ground - (k + 1) * h, 36, h - 1, "#33476d" if k % 2 else "#3a4f78"))
+    out.append(block(ox - 76, top - 30, 152, 30, "#3a4f78"))
+    out.append(block(ox - 60, top - 46, 46, 16, "#33476d"))
+    out.append(block(ox - 8, top - 44, 38, 14, "#3a4f78"))
+    # drifting fog at the base
+    for i in range(3):
+        out.append(f'<ellipse class="fog" style="animation-delay:{-i * 2.2:.1f}s" cx="{ox - 70 + i * 70}" cy="{ground + 6 + i * 5}" rx="78" ry="9" fill="{LIGHT}" fill-opacity=".09"/>')
+    return "".join(out)
+
+
 PROJECTS = [
+    ("cinematic-3d-web", "Cinematic 3D", ["Open-source Claude skill: describe", "a scene, get a scroll-driven", "3D website."],
+     "OPEN SOURCE", "Claude Code skill", ["Claude", "Three.js", "R3F"], scene_portal),
     ("veritaslearn", "VeritasLearn", ["AI study assistant that turns", "material into lessons, quizzes", "and flashcards."],
      "1ST PRIZE", "OPSYNC Hackathon", ["React Native", "Supabase", "Groq"], scene_flashcards),
     ("lifepass", "LifePass", ["Medical records shared through", "a personal QR code."],
@@ -344,6 +385,14 @@ def project_card(slug, name, desc, rank, event, stack, scene):
     .slide {{ animation: slide 4s ease-in-out infinite; }}
     @keyframes slide {{ 50% {{ transform: translate(-10px, -8px) }} }}
     .reveal {{ opacity: 0; animation: in .6s forwards; }}
+    .leaf {{ animation: swing 6s ease-in-out infinite; }}
+    @keyframes swing {{ 0%, 15% {{ transform: scaleX(1) }} 50%, 80% {{ transform: scaleX(.18) }} 100% {{ transform: scaleX(1) }} }}
+    .glow {{ opacity: .15; animation: glow 6s ease-in-out infinite; }}
+    @keyframes glow {{ 0%, 15% {{ opacity: .15 }} 50%, 80% {{ opacity: .95 }} 100% {{ opacity: .15 }} }}
+    .spill {{ opacity: 0; animation: spill 6s ease-in-out infinite; }}
+    @keyframes spill {{ 0%, 15% {{ opacity: 0 }} 50%, 80% {{ opacity: .35 }} 100% {{ opacity: 0 }} }}
+    .fog {{ animation: fog 6.6s ease-in-out infinite; }}
+    @keyframes fog {{ 50% {{ transform: translateX(14px) }} }}
   </style>
   {frame_card(W, H)}
   <g class="reveal" style="animation-delay:.1s">
